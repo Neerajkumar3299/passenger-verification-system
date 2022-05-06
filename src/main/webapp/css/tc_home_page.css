@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 100%;
+
+    /* height: 100vh; */
+
+
+}
+.container1 .navbar{
+    width: 100%;
+    padding: 5px;
+    /* border:  3px solid green; */
+    background-color: rgba(0, 0, 0, 0.849);
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 0px;
+}
+.navbar .header{
+    width: 80%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+
+}
+.header h3{
+    color: rgba(255, 255, 255, 0.711);
+    margin-right: 10px;
+}
+.header .form,.profile{
+    margin-right: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.profile-dropdown{
+    display: none;
+}
+/* --------------------------------- Form --------------------------- */
+.header .form{
+    display: flex;
+    align-items: center;
+    /* border: 5px solid green; */
+}
+.form input,select{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    outline:none;
+    margin-right: 10px;
+
+	
+}
+
+.form select{
+	color:grey;
+}
+.navbar button{
+    padding: 12px 20px;
+    border: none;
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+
+
+font-weight: bold;
+}
+.navbar button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.722);
+}
+
+
+/* ---------------------------- Profile -------------------- */
+.navbar .profile{
+   display: flex;
+   align-items: center;
+   position: relative;
+   
+
+}
+.navbar .profile:hover{
+    cursor: pointer;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.profile i{
+    color:white;
+    margin-left: 5px;
+    font-size: 25px;
+}
+.profile .profile-dropdown{
+    position: absolute;
+    background-color: white;
+    padding: 10px 5px;
+    top: 50px;
+    border-radius: 5px;
+    right:-15px;
+    box-shadow: 2px 2px 10px rgba(236, 230, 230, 0.938);
+    display:none;
+}
+.profile-dropdown li{
+    list-style:none;
+    padding: 5px;
+}
+.profile-dropdown a{
+    text-decoration:none;
+    font-weight: bold;
+    padding: 6px 25px;
+    border-radius: 5px;
+}
+.profile-dropdown a:hover{
+    cursor: pointer;
+    background-color: rgba(221, 202, 202, 0.826);
+}
+.profile i:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.747);
+}
+#profile-up{
+    display:none;
+}
+
+
+/* -------------------------------- SLIDE BAR -------------------------------- */
+section{
+    width: 100%;
+    /* border: 3px solid yellow; */
+    display:flex;
+
+}
+section .slidebar{
+    width: 20%;
+    /* border: 5px solid green; */
+    height: 90vh;
+    padding: 20px 0px;
+    
+    /* background-color: rgba(0, 0, 0, 0.936); */
+    background-color: rgb(247, 239, 239);
+    display: flex;
+
+}
+.slidebar .icon-bar{
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top: 0px;
+}
+.icon-bar div{
+    width: 100%;
+    /* border: 3px solid yellow; */
+    height: 50px;
+}
+.icon-bar div:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.icon-bar div i{
+    padding: 10px 0px;
+    /* border: 2px solid green; */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+
+    
+}
+
+
+#icon-bar-right{
+    display: none;
+}
+.slidebar .link-bar{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+   
+    
+}
+.link-bar div{
+    width: 100%;
+    height:50px;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+
+}
+.link-bar div a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+}
+.link-bar div a:hover{
+    color: rgb(45, 42, 42);
+}
+.link-bar div:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+
+/* ------------------------------------ Content-section ----------------------------- */
+.content-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.content-section .content-section-row{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-around;
+}
+.content-section-row .content-section-column{
+    width: 30%;
+    height: 100%;
+    box-shadow: 2px 2px 10px rgb(232, 221, 221);
+    border-radius: 30px;
+}
+
+.content-section-column h1{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgba(0, 255, 255, 0.133);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: rgba(0, 0, 0, 0.77);
+    font-size: 20px;
+}
+.content-section-column .count{
+    width: 100%;
+
+    height: 85%;
+}
+.count h1{
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.737);
+    background-color: white;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+
+/* --------------------------- Progress Bar ------------------------ */
+/* body {
+    background-color: #7E57C2
+} */
+
+.mt-100 {
+    margin-top: 200px
+}
+
+.progress {
+    width: 150px;
+    height: 150px !important;
+    float: left;
+    line-height: 150px;
+    background: none;
+    margin: 20px;
+    box-shadow: none;
+    position: relative
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.progress .progress-left {
+    left: 0
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left
+}
+
+.progress .progress-right {
+    right: 0
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #000;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%
+}
+
+ .progress-bar {
+    border-color: #049dff;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s
+}
+
+.progress.yellow .progress-bar {
+    border-color: #fdba04
+}
+
+.progress.yellow .progress-right .progress-bar {
+    animation: loading-3 1.8s linear forwards
+}
+
+.progress.yellow .progress-left .progress-bar {
+    animation: none
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg)
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg)
+    }
+}
+
+
+
+/* ------------------------------ Bar ----------------------------- */

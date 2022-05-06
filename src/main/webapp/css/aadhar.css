@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+
+    height: 100vh;
+}
+.container .aadhar{
+    width: 50%;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    box-shadow: 2px 2px 10px grey;
+}
+.aadhar .status{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.status img{
+    width: 25vh;
+}
+#unverified{
+    display: none;
+}
+.status h1{
+    padding: 10px 0px;
+    color: blue;
+}
+#non-exist{
+    display: none;
+}
+
+.aadhar .detail{
+    width: 100%;
+    margin-top: 20px;
+
+    padding: 20px;
+}
+.detail .group-detail{
+
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    position: relative;
+
+}
+.group-detail h3{
+    width: 60%;
+
+}
+.group-detail p{
+    width: 40%;
+}
+.links{
+    width: 100%;
+
+    display: flex;
+    padding: 10px 0px;
+}
+.links .dashboard{
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+}
+.links .verify{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    background-color: blue;
+
+}
